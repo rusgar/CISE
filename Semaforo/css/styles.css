@@ -1,0 +1,73 @@
+/* Estilos generales del body */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+/* Estilos del título H1 */
+        h1 {
+            font-size: 50px;
+            padding: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        /* Clase para color ROJO */
+        .rojo {
+            background-color: red;
+            color: white;
+        }
+
+        /* Clase para color AMARILLO */
+        .amarillo {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* Clase para color VERDE */
+        .verde {
+            background-color: green;
+            color: white;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn-finalizar {
+            background-color: purple;
+            color: white;
+        }
+
+        .imagen-final {
+            max-width: 400px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        
+        .btn-reiniciar {
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: block;         
+        margin-left: auto;      
+        margin-right: auto; 
+        }
+        .oculto {
+            display: none;
+        }
+        
+ 

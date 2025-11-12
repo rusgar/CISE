@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario - Con JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formulario-card">
+        <h1>Registro de Usuario</h1>
+        <form id="formulario">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="campo">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" min="1" max="120" required />
+          </div>
+          <button type="submit">Registrar</button>
+        </form>
+      </div>
+
+      <div id="tarjeta-resultado" >
+        <h2>Bienvenido!</h2>
+        <div id="info-usuario">
+          <div id="info-usuario">
+            <p><strong>📝 Nombre:</strong> Ana</p>
+            <p><strong>📧 Email:</strong> ana@gmail.com</p>
+            <p><strong>🎂 Edad:</strong> 30 años</p>
+            <p><strong>✅ Estado:</strong> Registrado exitosamente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

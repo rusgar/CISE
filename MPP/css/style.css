@@ -1,0 +1,14 @@
+.imagen-proyecto {
+    /* Quitamos el tamaño del HTML y lo ponemos aquí. */
+    width: 300px; 
+    /* Esta línea es CRUCIAL: asegura que la foto no se estire ni se aplaste. */
+    height: auto; 
+    /* ¡BONUS! Vamos a darle un borde rojo para que se note el cambio de CSS. */
+    border: 27px solid orange; 
+}
+
+/* Y ya que estamos, vamos a centrar el título principal */
+h1 {
+    text-align: center;
+    color: darkblue;
+}

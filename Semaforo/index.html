@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Título del semáforo -->
+    <h1 id="titulo" class="rojo" onclick="cambiarColor()">🔴 ROJO </h1>
+
+    <!-- Botón finalizar -->
+    <button class="btn-finalizar" onclick="finalizar()"> FINALIZAR  </button>
+
+    <!-- Imagen final (oculta al inicio) -->
+    <br>
+    <img id="imagenFinal" class="imagen-final oculto" src="img/felicidades.gif">
+    <button id="btnReiniciar" class="btn-reiniciar oculto" onclick="reiniciar()">REINICIAR</button>
+
+
+
+    <!-- Vinculamos el JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

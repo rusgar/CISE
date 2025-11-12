@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Colores</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Generador de Paletas</h1>
+        </div>
+
+        <div class="controles">
+            <div class="fila-controles">
+                <div class="seccion-control">
+                    <label>Modo de Generación</label>
+                    <div class="botones-modo">
+                        <button class="btn-modo activo" data-modo="aleatorio">🎲 Aleatorio</button>
+                        <button class="btn-modo" data-modo="similares">🎯 Colores Similares</button>
+                        <button class="btn-modo" data-modo="armonicos">✨ Colores Armónicos</button>
+                    </div>
+                </div>
+
+                <div class="seccion-control" id="colorBaseSection" style="display: none;">
+                    <label>Color de Base</label>
+                    <div class="color-base-selector">
+                        <input type="color" id="colorBase" value="#667eea">
+                        <span id="colorBaseTexto">#667eea</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botones-accion">
+                <button onclick="generarPaleta()">🎨 Generar Paleta</button>
+                <button class="secundario" onclick="exportarPaleta()">💾 Exportar Códigos</button>
+            </div>
+        </div>
+
+        <div id="galeria" class="galeria"></div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/*
+
+✅ Reset y Body (fondo degradado)
+✅ Container (centrado)
+✅ Formulario-card (caja blanca)
+✅ Título h1
+✅ Campos y Labels
+✅ Inputs (con efecto focus)
+✅ Botón (con efecto hover)
+✅ Tarjeta resultado
+✅ Info usuario y párrafos
+*/
+
+/* ============================================
+   PASO 1: RESET Y BODY BÁSICO
+   ============================================ */
+* {
+    margin: 0;           /* Quita espacios externos */
+    padding: 0;          /* Quita espacios internos */
+    box-sizing: border-box;  /* El padding no suma al ancho */
+}
+body.cise {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: url("../img/cise.png") center;   /* Fuente bonita para todo */
+    background-size: cover;  /* Degradado rosa-rojo */
+    min-height: 100vh;   /* Altura mínima = toda la pantalla */
+    padding: 20px;       /* Separación de los bordes */
+}
+
+/* ============================================
+   PASO 2: CONTAINER Y FORMULARIO-CARD
+   ============================================ */
+
+/* Contenedor principal - centra todo */
+.container {
+    max-width: 500px; /* Ancho máximo de 500px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Tarjeta del formulario - caja blanca con sombra */
+.formulario-card {
+    background: white;           /* Fondo blanco */
+    padding: 30px;              /* Espacio interno */
+    border-radius: 15px;        /* Esquinas redondeadas */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);  /* Sombra elegante */
+    margin-bottom: 20px;        /* Espacio debajo */
+}
+
+/* ============================================
+   PASO 3: TÍTULO (H1)
+   ============================================ */
+
+/* Título principal del formulario */
+h1 {
+    color: #333;              /* Gris oscuro (casi negro) */
+    margin-bottom: 25px;      /* Espacio debajo del título */
+    text-align: center;       /* Centrado horizontal */
+}
+/* ============================================
+   PASO 4: CAMPOS Y LABELS
+   ============================================ */
+
+/* Contenedor de cada campo */
+.campo {
+    margin-bottom: 20px;    /* Espacio entre campos */
+}
+
+/* Etiquetas (Nombre:, Email:, Edad:) */
+label {
+    display: block;         /* Ocupa toda la línea */
+    margin-bottom: 8px;     /* Espacio entre label e input */
+    color: #555;            /* Gris medio */
+    font-weight: 600;       /* Texto semi-negrita */
+}
+
+/* ============================================
+   PASO 5: INPUTS (CAJAS DE TEXTO)
+   ============================================ */
+
+/* Estilos de los inputs */
+input {
+    width: 100%;                /* Ocupa todo el ancho disponible */
+    padding: 12px;              /* Espacio interno cómodo */
+    border: 2px solid #ddd;     /* Borde gris claro */
+    border-radius: 8px;         /* Esquinas redondeadas */
+    font-size: 16px;            /* Tamaño de texto legible */
+    transition: border 0.3s;    /* Animación suave del borde */
+}
+
+/* Cuando haces clic en el input */
+input:focus {
+    outline: none;              /* Quita el borde azul del navegador */
+    border-color: #f5576c;      /* Borde rojo/rosa (color del tema) */
+}
+
+/* ============================================
+   PASO 6: BOTÓN (BUTTON)
+   ============================================ */
+
+/* Estilos del botón */
+button {
+    width: 100%;                /* Ocupa todo el ancho */
+    padding: 15px;              /* Botón grande y cómodo */
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);  /* Degradado rosa-rojo */
+    color: white;               /* Texto blanco */
+    border: none;               /* Sin borde */
+    border-radius: 8px;         /* Esquinas redondeadas */
+    font-size: 18px;            /* Texto grande */
+    cursor: pointer;            /* Manita al pasar el ratón */
+    transition: transform 0.3s; /* Animación suave */
+}
+
+/* Efecto hover (al pasar el ratón) */
+button:hover {
+    transform: translateY(-2px);  /* Sube 2px = efecto de elevación */
+}
+
+/* ============================================
+   PASO 7: TARJETA DE RESULTADO
+   ============================================ */
+
+/* Tarjeta que muestra los datos registrados */
+#tarjeta-resultado {
+    background: white;           /* Fondo blanco */
+    padding: 30px;              /* Espacio interno */
+    border-radius: 15px;        /* Esquinas redondeadas */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);  /* Sombra elegante */
+    text-align: center;         /* Texto centrado */
+}
+
+/* Clase para ocultar la tarjeta (se usa con JS) */
+.tarjeta-hidden {
+    display: none;              /* Oculta completamente */
+}
+
+/* ============================================
+   PASO 8: INFO USUARIO Y PÁRRAFOS
+   ============================================ */
+
+/* Caja donde aparece la info del usuario */
+#info-usuario {
+    margin-top: 20px;           /* Espacio arriba */
+    padding: 20px;              /* Espacio interno */
+    background: #f8f9fa;        /* Fondo gris muy claro */
+    border-radius: 10px;        /* Esquinas redondeadas */
+    text-align: left;           /* Texto alineado a la izquierda */
+}
+
+/* Párrafos de la información */
+#info-usuario p {
+    margin: 10px 0;             /* Espacio vertical entre líneas */
+    color: #555;                /* Gris medio */
+    font-size: 16px;            /* Tamaño legible */
+}
