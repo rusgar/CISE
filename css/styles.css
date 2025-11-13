@@ -1,0 +1,30 @@
+body { 
+    font-family: 'Courier New', Courier, monospace;
+     background-image:url("../Contador/img/cise.png");  
+     background-size: cover;   
+     padding: 3em;
+ }
+
+h1 { 
+    color: #333;
+    text-align: center;
+    background-color: #cc001f;
+    border-radius: 8px;     
+    
+ }
+
+ul {
+     list-style: none;
+      padding: 10px; 
+    }
+li {
+     margin: 1em 0;
+     }
+a { 
+    text-decoration: none; 
+    color: #eff6ef;
+     font-weight: bold;
+     font-size:2rem;
+     background-color: #0077cc;
+     border-radius: 8px;  
+}
