@@ -1,0 +1,196 @@
+/* ============================================
+   RESET Y CONFIGURACIÓN BASE
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;  
+       
+    /* Para que el footer siempre esté abajo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   HEADER (CABECERA)
+   ============================================ */
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+   ============================================ */
+
+.fondo-galeria {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/cise.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.contenedor-principal {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+
+/* ============================================
+   SECCIONES DE GALERÍA
+   ============================================ */
+
+.seccion-galeria {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+    /* Animación al aparecer */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover en la sección completa */
+.seccion-galeria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-galeria h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* ============================================
+   CONTENEDOR DE IMAGEN
+   ============================================ */
+
+.contenedor-imagen {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #f0f0f0;
+    
+    /* Para centrar la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    cursor: pointer;
+    
+    /* Animación suave al cambiar */
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Efecto hover en la imagen */
+.contenedor-imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* Clase para animación de cambio */
+.imagen-cambiando {
+    animation: cambioImagen 0.5s ease;
+}
+
+/* ============================================
+   DESCRIPCIÓN
+   ============================================ */
+
+.descripcion {
+    color: #666;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ============================================
+   FOOTER (PIE DE PÁGINA)
+   ============================================ */
+
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* ============================================
+   ANIMACIÓN DE CAMBIO DE IMAGEN
+   ============================================ */
+
+@keyframes cambioImagen {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================================
+   RESPONSIVE (MÓVILES)
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* En móvil, las secciones van en columna */
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .contenedor-imagen {
+        height: 200px;
+    }
+}

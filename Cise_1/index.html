@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Galería Interactiva</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER (Cabecera) -->
+    <header class="header">
+      <h1>🖼️ Mi Galería de Fotos</h1>
+      <p>Haz clic en las imágenes para cambiarlas</p>
+    </header>
+    <div class="fondo-galeria">
+      <!-- MAIN (Contenido Principal) -->
+      <main class="contenedor-principal">
+        <!-- SECCIÓN 1 -->
+        <section class="seccion-galeria">
+          <h2>🌄 Naturaleza</h2>
+          <div class="contenedor-imagen">
+            <img
+              src="img/naturaleza_1.jpeg"
+              alt="Imagen de naturaleza"
+              id="imagen1"
+              onclick="cambiarImagen('imagen1')"
+            />
+          </div>
+          <p class="descripcion">Paisajes hermosos</p>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section class="seccion-galeria">
+          <h2>🏙️ Ciudad</h2>
+          <div class="contenedor-imagen">
+            <img
+              src="img/ciudad_1.jpeg"
+              alt="Imagen de ciudad"
+              id="imagen2"
+              onclick="cambiarImagen('imagen2')"
+            />
+          </div>
+          <p class="descripcion">Vida urbana</p>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section class="seccion-galeria">
+          <h2>🎨 Arte</h2>
+          <div class="contenedor-imagen">
+            <img
+              src="img/arte_1.jpeg"
+              alt="Imagen de arte"
+              id="imagen3"
+              onclick="cambiarImagen('imagen3')"
+            />
+          </div>
+          <p class="descripcion">Creatividad</p>
+        </section>
+      </main>
+    </div>
+    <!-- FOOTER (Pie de página) -->
+    <footer class="footer">
+      <p>© 2025 Mi Galería - Proyecto Educativo CISE</p>
+      <p>Hecho con ❤️ por [Tu Nombre]</p>
+    </footer>
+
+    <!-- Enlace al JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- ElementoQué hace
+  <header>Cabecera con título de la página
+    <main>Contenedor principal de las 3 secciones
+        <section>Cada una de las 3 áreas con imagen
+            <img>Imagen que cambiará al hacer cliconclick="cambiarImagen('imagen1')"Llama a la función JS cuando haces clic
+            id="imagen1"Identificador único para cada imagen
+            <footer>Pie de página con información -->
